@@ -1,0 +1,91 @@
+{
+    "window.newWindowProfile": "Default",
+    // GENERAL EDITOR SETTINGS
+    "editor.lineNumbers": "on",
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "editor.renderLineHighlight": "all",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderWhitespace": "trailing",
+    //
+    // PYTHON-SPECIFIC SETTINGS
+    "[python]": {
+        // Sets the Python interpreter path for virtual environments
+        "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+        // LINTING AND CODE QUALITY TOOLS
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.mypyEnabled": true,
+        "python.linting.lintOnSave": true,
+        "python.linting.ignorePatterns": [
+            "**/.venv/**",
+            "**/__pycache__/**"
+        ],
+        //
+        // --- FORMATTER CONFIGURATION: SWITCH BETWEEN autopep8, Black, and Ruff ---
+        //
+        // AUTOPEP8 SETTINGS (Uncomment to use autopep8)
+        // Autopep8 automatically formats Python code to conform to the PEP 8 style guide.
+        "editor.defaultFormatter": "ms-python.autopep8", // Default formatter set to autopep8
+        "python.formatting.provider": "autopep8", // Specifies autopep8 as the formatting tool
+        "python.formatting.autopep8Args": [ // Custom arguments for autopep8
+            "--max-line-length",
+            "80"
+        ],
+        //
+        // BLACK SETTINGS (Uncomment to use Black)
+        // Black is an uncompromising Python code formatter that enforces consistent styling.
+        // Black does not require additional arguments in this setup.
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        // "python.formatting.provider": "black",
+        // "python.formatting.blackArgs": ["--line-length", "80"],
+        //
+        // RUFF SETTINGS (Uncomment to use Ruff for formatting and linting)
+        // Ruff is a fast Python linter, written in Rust. It can also perform code fixes.
+        // "editor.codeActionsOnSave": {
+        //     "source.organizeImports.ruff": "always",  // Organizes imports using Ruff on save
+        //     "source.fixAll": "always"  // Fixes all fixable issues with Ruff on save
+        // },
+        //
+        // --- IMPORT ORGANIZATION SETTINGS ---
+        // Organize imports automatically on save (default behavior using VS Code tools)
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always", // Always organize imports
+            "source.fixAll": "always" // Fixes all issues using the default tools
+        },
+        // Set up import sorting with a specific profile and options
+        "python.sortImports.args": [
+            "--profile",
+            "black", // Use Black's import sorting profile (consistent with black formatter)
+            // Alternative: Use 'isort' as a sorting tool instead of Ruff
+            // "--profile", "black",       // Optional: Explicitly use Black profile with isort
+            // "--ignore=ipdb",            // Exclude specific imports (like ipdb) from sorting
+        ],
+        // --- DEBUGGING SETTINGS ---
+        "debug.inlineValues": "auto", // Displays inline values for variables during debugging
+        "python.testing.autoTestDiscoverOnSaveEnabled": true,
+        "python.testing.pytestEnabled": true,
+        // --- TERMINAL SETTINGS ---
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.fontSize": 14,
+        // --- GIT AND VERSION CONTROL ---
+        "git.decorations.enabled": true,
+        "git.confirmSync": false,
+        // --- EXTENSIONS SETTINGS ---
+        "python.languageServer": "Pylance", // Pylance provides fast, feature-rich language support
+        "jupyter.enablePlotViewer": true,
+        // "jupyter.interactiveWindow.textEditor.executeSelection": true,
+        // --- THEME SETTINGS ---
+        "workbench.colorTheme": "Visual Studio Dark", // Sets the color theme
+        "workbench.iconTheme": "material-icon-theme" // Sets the icon theme
+    },
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "auto"
+}
