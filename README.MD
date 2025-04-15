@@ -37,7 +37,6 @@ This repository contains a minimal set of configuration files for Visual Studio 
 
      ```
      python3.11 -m venv .venv
-
      ```
 3. Install recommended extensions for Python development in VS Code, e.g.:
      - Python (ms-python)

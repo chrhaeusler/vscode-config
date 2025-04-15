@@ -1,5 +1,12 @@
 {
     "window.newWindowProfile": "Default",
+    // THEME SETTINGS
+    "workbench.colorTheme": "Visual Studio Dark", // Sets the color theme
+    "workbench.iconTheme": "vscode-icons", // Sets the icon theme
+    "workbench.colorCustomizations": {
+        "editor.background": "#111111"
+    },
+    "window.customTitleBarVisibility": "auto",
     // GENERAL EDITOR SETTINGS
     "editor.lineNumbers": "on",
     "editor.tabSize": 4,
@@ -63,7 +70,7 @@
         // Set up import sorting with a specific profile and options
         "python.sortImports.args": [
             "--profile",
-            "black", // Use Black's import sorting profile (consistent with black formatter)
+            "black", // Use Blacks import sorting profile (consistent with black formatter)
             // Alternative: Use 'isort' as a sorting tool instead of Ruff
             // "--profile", "black",       // Optional: Explicitly use Black profile with isort
             // "--ignore=ipdb",            // Exclude specific imports (like ipdb) from sorting
@@ -81,11 +88,6 @@
         // --- EXTENSIONS SETTINGS ---
         "python.languageServer": "Pylance", // Pylance provides fast, feature-rich language support
         "jupyter.enablePlotViewer": true,
-        // "jupyter.interactiveWindow.textEditor.executeSelection": true,
-        // --- THEME SETTINGS ---
-        "workbench.colorTheme": "Visual Studio Dark", // Sets the color theme
-        "workbench.iconTheme": "material-icon-theme" // Sets the icon theme
-    },
-    "workbench.activityBar.location": "top",
-    "window.customTitleBarVisibility": "auto"
+        // "jupyter.interactiveWindow.textEditor.executeSelection": true
+    }
 }
