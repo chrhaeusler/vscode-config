@@ -6,7 +6,7 @@
         "key": "alt+b",
         "command": "type",
         "args": {
-            "text": "import ipdb; ipdb.set_trace()  # noqa"
+            "text": "import ipdb; ipdb.set_trace()"
         },
         "when": "editorTextFocus"
     }
