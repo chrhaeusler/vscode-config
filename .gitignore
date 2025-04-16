@@ -2,7 +2,9 @@
 /*
 
 # Not these directories
+!docs/
 !snippets/
+!templates/
 
 # Not theese files
 !.gitignore
