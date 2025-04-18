@@ -14,14 +14,22 @@
     "files.autoSaveDelay": 1000,
     "editor.formatOnSave": true,
     "editor.rulers": [
-        80,
+        88,
         100,
         120
     ],
     "editor.renderLineHighlight": "all",
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "trailing",
-    //
+    // "python.sortImports.args": [
+    //     "--profile", 
+    //     "black", // Use Black's import sorting profile (consistent with Black formatter)
+    // isort als alternative
+    // "isort.args": [
+    //     "--profile",
+    //     "black", // Optional: Explicitly use Black profile with isort
+    //     "--ignore=ipdb" // Exclude specific imports (like ipdb) from sorting
+    // ]
     // PYTHON-SPECIFIC SETTINGS
     "[python]": {
         // Sets the Python interpreter path for virtual environments
@@ -35,46 +43,29 @@
             "**/.venv/**",
             "**/__pycache__/**"
         ],
-        //
+        // Ruff as linter, sorter, auto-fixer
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "always", // Organizes imports using ruff on save
+            "source.fixAll": "always" // Fixes all fixable issues with ruff on save
+        },
         // --- FORMATTER CONFIGURATION: SWITCH BETWEEN autopep8, Black, and Ruff ---
         //
         // AUTOPEP8 SETTINGS (Uncomment to use autopep8)
-        // Autopep8 automatically formats Python code to conform to the PEP 8 style guide.
-        "editor.defaultFormatter": "ms-python.autopep8", // Default formatter set to autopep8
-        "python.formatting.provider": "autopep8", // Specifies autopep8 as the formatting tool
-        "python.formatting.autopep8Args": [ // Custom arguments for autopep8
-            "--max-line-length",
-            "80"
-        ],
+        // "editor.defaultFormatter": "ms-python.autopep8", // Default formatter set to autopep8
+        // "python.formatting.provider": "autopep8", // Specifies autopep8 as the formatting tool
+        // "python.formatting.autopep8Args": [ // Custom arguments for autopep8
+        //     "--max-line-length",
+        //     "80"
+        // ],
         //
         // BLACK SETTINGS (Uncomment to use Black)
-        // Black is an uncompromising Python code formatter that enforces consistent styling.
-        // Black does not require additional arguments in this setup.
-        // "editor.defaultFormatter": "ms-python.black-formatter",
-        // "python.formatting.provider": "black",
-        // "python.formatting.blackArgs": ["--line-length", "80"],
-        //
-        // RUFF SETTINGS (Uncomment to use Ruff for formatting and linting)
-        // Ruff is a fast Python linter, written in Rust. It can also perform code fixes.
-        // "editor.codeActionsOnSave": {
-        //     "source.organizeImports.ruff": "always",  // Organizes imports using Ruff on save
-        //     "source.fixAll": "always"  // Fixes all fixable issues with Ruff on save
-        // },
-        //
-        // --- IMPORT ORGANIZATION SETTINGS ---
-        // Organize imports automatically on save (default behavior using VS Code tools)
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "always", // Always organize imports
-            "source.fixAll": "always" // Fixes all issues using the default tools
-        },
-        // Set up import sorting with a specific profile and options
-        "python.sortImports.args": [
-            "--profile",
-            "black", // Use Blacks import sorting profile (consistent with black formatter)
-            // Alternative: Use 'isort' as a sorting tool instead of Ruff
-            // "--profile", "black",       // Optional: Explicitly use Black profile with isort
-            // "--ignore=ipdb",            // Exclude specific imports (like ipdb) from sorting
+        "editor.defaultFormatter": "ms-python.black-formatter", // Default formatter set to Black
+        "python.formatting.provider": "black", // Specifies Black as the formatting tool
+        "python.formatting.blackArgs": [
+            "--line-length",
+            "88"
         ],
+        //
         // --- DEBUGGING SETTINGS ---
         "debug.inlineValues": "auto", // Displays inline values for variables during debugging
         "python.testing.autoTestDiscoverOnSaveEnabled": true,
