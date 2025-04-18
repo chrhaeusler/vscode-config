@@ -60,11 +60,15 @@ function oder right click → peek definition
 ```bash
 # Create a virtual environment
 python -m venv .venv
+```
 
+```bash
 # Activate the virtual environment (optional, but recommended)
 # On Windows: .venv\Scripts\activate
-# On Unix/Linux/Mac: source .venv/bin/activate
+source .venv/bin/activate
+```
 
+```bash
 # Install dependencies
 pip install -r requirements.txt
 
