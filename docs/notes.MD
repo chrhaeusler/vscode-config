@@ -9,13 +9,20 @@
 
 ## Basics <a name="basics"></a>
 
+### Install
+
+Use the script ([extensions-install.sh](../extensions-install.sh))
+
 ### Config
 
-- **Theme**: Dark Modern (Ctrl+Shift+P -> theme)
-- *Icons*: vscode-icons
+- Theme: Dark Modern (Ctrl+Shift+P -> theme)
+- Icons: vscode-icons 
 
 
 ## Notes from Course <a name="notes-from-course"></a>
+
+## settings.json
+Ctrl+Shift+P -> open settings.json
 
 ### Intellisense
 
@@ -96,18 +103,28 @@ put in workspace directory: `.vscode/launch.json`
 }
 ```
 
+
 ### Markdown
-- [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d)
+- `Ctrl+Space`: Intellisense giving code snippets for formatting are at the bottom
+- [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+- [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/
+- Extensions: e.g., [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf), ...
+
 
 ### YAML
 
+- Extension for formatting: e.g. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) (by Red Hat; incl. validation, error detection, hover support), ...
+
+
 ### SQL
+
 
 ## Links <a name="links"></a>
 
 ### General
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+- [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 - [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d)
 - [https://code.visualstudio.com/docs/python/formatting](https://code.visualstudio.com/docs/python/formatting)
 - [GitHub Copilot](https://github.com/features/copilot)
