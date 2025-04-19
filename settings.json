@@ -36,9 +36,10 @@
         "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
         // LINTING AND CODE QUALITY TOOLS
         "python.linting.enabled": true,
-        "python.linting.pylintEnabled": true,
-        "python.linting.mypyEnabled": true,
-        "python.linting.lintOnSave": true,
+        "python.linting.mypyEnabled": true, // type checker
+        "python.linting.pylintEnabled": false, // using Ruff already
+        "python.linting.flake8Enabled": false, // using Ruff already
+         "python.linting.lintOnSave": true,
         "python.linting.ignorePatterns": [
             "**/.venv/**",
             "**/__pycache__/**"
