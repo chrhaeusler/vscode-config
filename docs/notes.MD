@@ -128,6 +128,7 @@ put in workspace directory: `.vscode/launch.json`
 ### General
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+- [Conventional Commits Cheat Sheet](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13); [ConventionalCommmits.org](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 - [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 - [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d)
 - [https://code.visualstudio.com/docs/python/formatting](https://code.visualstudio.com/docs/python/formatting)
