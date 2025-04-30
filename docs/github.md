@@ -9,7 +9,7 @@ git add .
 git status
 ```
 
-### Commit normally
+## Commit normally
 
 ```bash
 git commit -m "your descriptive commit message"
@@ -25,6 +25,47 @@ git commit --no-verify -m "your descriptive commit message"
 
 ```bash
 git push
+```
+
+## Merge Branch
+
+1. Make sure you're up to date:
+
+```bash
+git fetch origin
+```
+
+2. Rebase to main (cleaner history):
+
+```bash
+git rebase origin/main
+```
+
+3. Merge to main:
+
+```bash
+git checkout main
+git merge <your-branch/is-awesome-branch> --no-ff
+```
+
+4. Push your updated main:
+
+```bash
+git push origin main
+```
+
+5. Delete merged branch (optional)
+
+a. delete locally
+
+```bash
+git branch -d feature/bot-polling-config
+```
+
+b. delete remotely
+
+```bash
+git push origin --delete feature/bot-polling-config
 ```
 
 ## Common Commands
