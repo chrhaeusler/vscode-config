@@ -52,6 +52,12 @@ Unstage a file
 git restore --staged <filename>
 ```
 
+Show all branches (including remotes `--all`)
+
+```bash
+git branch --all
+```
+
 Create and switch to a new branch
 
 ```bash
