@@ -32,6 +32,7 @@ git push
 1. Make sure you're up to date:
 
 ```bash
+git checkout main
 git fetch origin
 ```
 
@@ -66,6 +67,17 @@ b. delete remotely
 
 ```bash
 git push origin --delete feature/bot-polling-config
+```
+
+### Note: fetch vs. pull
+
+```bash
+git fetch origin
+# Your local main is still the same
+# But origin/main has moved ahead if someone pushed to it
+
+git pull origin main
+# Now your local main updates and includes those remote changes
 ```
 
 ## Common Commands
@@ -285,4 +297,18 @@ git commit --no-verify -m "WIP: continue debugging XYZ"`
 
 ```
 # type: ignore
+```
+
+## Setup Repo
+
+```bash
+git init
+git remote add origin git@github.com:chrhaeusler/<NEW REPO>.git
+git remote -v
+git push --set-upstream origin main
+git push # -u origin main
+```
+
+```bash
+git clone git@github.com:chrhaeusler/<NEW REPO>.git <folder name>
 ```
