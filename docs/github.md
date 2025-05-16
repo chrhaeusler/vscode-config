@@ -309,6 +309,14 @@ git push --set-upstream origin main
 git push # -u origin main
 ```
 
+clone
+
 ```bash
 git clone git@github.com:chrhaeusler/<NEW REPO>.git <folder name>
+```
+
+change remote repository
+
+```bash
+git remote set-url origin git@github.com:chrhaeusler/<NEW REPO>.gi
 ```
