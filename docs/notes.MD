@@ -111,7 +111,7 @@ put in workspace directory: `.vscode/launch.json`
 ### Markdown
 - `Ctrl+Space`: Intellisense giving code snippets for formatting are at the bottom
 - [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
-- [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/
+- [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/)
 - Extensions: e.g., [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf), ...
 
 
