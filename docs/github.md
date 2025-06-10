@@ -10,6 +10,15 @@ git clone git@github.com:chrhaeusler/<NEW REPO>.git <folder name>
 
 ### From Scratch
 
+Set global config
+
+```bash
+git config --global user.name "Christian O. Häusler"
+git config --global user.email "der.haeusler@gmx.net"
+```
+
+Setting up a repo locally (already set up on github but empty)
+
 ```bash
 git init
 git remote add origin git@github.com:chrhaeusler/<NEW REPO>.git
@@ -21,7 +30,7 @@ git push # -u origin main
 #### Change remote repository
 
 ```bash
-git remote set-url origin git@github.com:chrhaeusler/<NEW REPO>.gi
+git remote set-url origin git@github.com:chrhaeusler/<NEW REPO>.git
 ```
 
 ## The Standard
