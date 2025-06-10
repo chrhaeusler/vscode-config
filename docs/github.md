@@ -1,5 +1,29 @@
 # Github Step-by-Step:
 
+## Setup Repo
+
+### Cloning
+
+```bash
+git clone git@github.com:chrhaeusler/<NEW REPO>.git <folder name>
+```
+
+### From Scratch
+
+```bash
+git init
+git remote add origin git@github.com:chrhaeusler/<NEW REPO>.git
+git remote -v
+git push --set-upstream origin main
+git push # -u origin main
+```
+
+#### Change remote repository
+
+```bash
+git remote set-url origin git@github.com:chrhaeusler/<NEW REPO>.gi
+```
+
 ## The Standard
 
 ```bash
@@ -27,7 +51,27 @@ git commit --no-verify -m "your descriptive commit message"
 git push
 ```
 
-## Merge Branch
+## Branches
+
+### Show all branches (including remotes `--all`)
+
+```bash
+git branch --all
+```
+
+### Switch to an existing branch
+
+```bash
+git checkout your-branch-name
+```
+
+### Create and switch to a new branch
+
+```bash
+git checkout -b feature/your-branch-name
+```
+
+### Merge Branch
 
 1. Make sure you're up to date:
 
@@ -82,66 +126,49 @@ git pull origin main
 
 ## Common Commands
 
-See recent commits
+#### Show recent commits
 
 ```bash
 git log --oneline --decorate --graph --abbrev-commit -n10
 ```
 
-Show file changes before staging
+#### Show file changes before staging
 
-````bash
+```bash
 git diff
-bash
+```
 
-See staged changes
+#### Show staged changes
+
 ```bash
 git diff --cached
-````
+```
 
-Unstage a file
+#### Unstage a file
 
 ```bash
 git restore --staged <filename>
 ```
 
-Show all branches (including remotes `--all`)
-
-```bash
-git branch --all
-```
-
-Create and switch to a new branch
-
-```bash
-git checkout -b feature/your-branch-name
-```
-
-Switch to an existing branch
-
-```bash
-git checkout your-branch-name
-```
-
-Pull latest changes (keeping local work safe)
+#### Pull latest changes (keeping local work safe)
 
 ```bash
 git pull --rebase
 ```
 
-Merge another branch into yours
+#### Merge another branch into yours
 
 ```bash
 git merge other-branch-name
 ```
 
-Push a new branch
+#### Push a new branch
 
 ```bash
 git push -u origin feature/your-branch-name
 ```
 
-Hard reset to last commit (⚡ dangerous!)
+#### Hard reset to last commit (⚡ dangerous!)
 
 ```bash
 git reset --hard
@@ -162,23 +189,6 @@ Before merging to main, fix any outstanding pre-commit problems.
 ```bash
 git commit --no-verify -m "your message"
 ```
-
-### Example Full Session
-
-```bash
-# Create a new branch
-git checkout -b feature/fix-bot-html-escaping
-
-# Work on code...
-# Stage and commit
-git add .
-git commit -m "fix: correct HTML escaping for bot info display"
-
-# Push new branch
-git push -u origin feature/fix-bot-html-escaping
-```
-
-Later, open a pull request (PR) to merge into main
 
 ## Commit Message Guidelines
 
@@ -283,40 +293,18 @@ git commit -m "fix: clean up style and types after pre-commit check"
 
 - Pre-commit hooks block you, but you are mid-debugging?
 
-```
+```bash
 git commit --no-verify -m "WIP: continue debugging XYZ"`
 ```
 
 - Want to temporarily ignore a Ruff rule? Add
 
-```
+```python
 # noqa: RULE_CODE at the end of the line
 ```
 
 - Need to temporarily ignore a mypy error? Add
 
-```
+```python
 # type: ignore
-```
-
-## Setup Repo
-
-```bash
-git init
-git remote add origin git@github.com:chrhaeusler/<NEW REPO>.git
-git remote -v
-git push --set-upstream origin main
-git push # -u origin main
-```
-
-clone
-
-```bash
-git clone git@github.com:chrhaeusler/<NEW REPO>.git <folder name>
-```
-
-change remote repository
-
-```bash
-git remote set-url origin git@github.com:chrhaeusler/<NEW REPO>.gi
 ```

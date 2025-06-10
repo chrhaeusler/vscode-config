@@ -122,6 +122,13 @@ put in workspace directory: `.vscode/launch.json`
 
 ### SQL
 
+- Extension `SQLTools` + install driver for specific SQL dialect / database type
+
+### Remote Development
+
+- Extension `Remote Development` includes **`Remote SSH`**))
+- Extension `Docker`
+
 
 ## Links <a name="links"></a>
 
