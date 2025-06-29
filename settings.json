@@ -29,8 +29,8 @@
 
     // Python virtual environment
     // The following breaks constantly, so  rely on the adjusted .bashrc
-    //"python.terminal.activateEnvInCurrentTerminal": true,
-    //"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 
     // PYTHON-SPECIFIC SETTINGS
     "[python]": {
