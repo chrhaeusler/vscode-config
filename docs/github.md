@@ -1,4 +1,4 @@
-# Github Step-by-Step:
+# Github Step-by-Step
 
 ## Setup Repo
 
