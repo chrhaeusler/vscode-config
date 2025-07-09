@@ -6,7 +6,7 @@ This repository contains a minimal set of configuration files for Visual Studio 
 2. settings for a productive coding environment with features like linting, formatting, debugging, and keybindings.
 3. some cheat sheets in `docs/`.
 
-## Files Tracked
+## Files
 
 - [settings.json](/settings.json): user settings of VS Code
 - [keybindings.json](/keybindings.json): custom keybindings

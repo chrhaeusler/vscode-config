@@ -18,7 +18,7 @@
 
 ### Install
 
-- for extensions, use ([extensions-install.sh](../extensions-install.sh))
+- use ([extensions-install.sh](../extensions-install.sh))
 
 ### Update from .deb downloaded within VSCode
 
@@ -31,8 +31,8 @@ sudo apt-get install -f
 
 ### Config
 
-- Theme: Dark Modern (Ctrl+Shift+P -> theme)
-- Icons: vscode-icons
+- Theme: Dark Modern (`Ctrl+Shift+P` -> _theme_)
+- Icons: `vscode-icons`
 
 ## Extensions <a name="extensions"></a>
 
@@ -43,6 +43,7 @@ sudo apt-get install -f
 - Code Spell Checker
 - ToDo Tree (shows files with `TODO`s or `FIXME`s in them)
 - Diff
+- CSV (Excel Viewer), PDF Viewer
 - Code Runner
 - Live Share
 
@@ -51,7 +52,7 @@ sudo apt-get install -f
 ### GUI
 
 - single click on a file in explorer opens a file temporarily (file name in italics); double click on file name (in italics) to open permanently.
-- use `Ln xy` in status bar to jump to line (or `Ctrl+g`)
+- use `Ln xy` in status bar to jump to line (or `Ctrl+G`)
 
 ### settings.json
 
