@@ -3,8 +3,10 @@
 ## Table of Contents
 
 1. [Basics](#basics)
-2. [Notes from Course](#notes-from-course)
-3. [Links](#links)
+2. [General Stuff](#general)
+3. [Hotkeys](#hotkeys)
+4. [Python](#python)
+5. [Links](#links)
 
 ## Basics <a name="basics"></a>
 
@@ -12,7 +14,7 @@
 
 Use the script ([extensions-install.sh](../extensions-install.sh))
 
-### Updates from downloaded.deb
+### Update from .deb downloaded within VSCode
 
 ```bash
 cd /home/chris/Downloads
@@ -26,20 +28,41 @@ sudo apt-get install -f
 - Theme: Dark Modern (Ctrl+Shift+P -> theme)
 - Icons: vscode-icons
 
-## Notes from Course <a name="notes-from-course"></a>
+### Optional Extensions
 
-## settings.json
+- Code Spell Checker
+- Code Runner
+- Live Share
 
-Ctrl+Shift+P -> open settings.json
+## General Stuff <a name="general"></a>
+
+### GUI
+
+- single click on a file in explorer opens a file temporarily (file name in italics); double click on file name (in italics) to open permanently.
+- use `Ln xy` in right bottom bar to jump to line
+
+### settings.json
+
+`Ctrl+Shift+P` -> "Preferences: Open User Settings (JSON)"open settings.json
+
+## Hotkeys <a name="hotkeys"></a>
+
+### General
+
+- **Open command palette**: `Ctrl+Shift+P` or `F1`
+- **Quick open file**: `Ctrl+P`
+- **Circle through file tabs**: `Ctrl+Tab`
 
 ### Intellisense
 
-- **Auto-completion**: Press `Ctrl+Space` to see suggestions; click on desired
+- **Auto-completion**: `Ctrl+Space` to see suggestions; click on desired
   one and `Ctrl+Space` again to see its doc
 
 ### Code Comments
 
 - Toggle line comment: `Ctrl+/`
+- Indent block: `Tab`
+- Unindent block: `Shift + Tab`
 
 ### Formatting
 
@@ -61,13 +84,7 @@ Format Document: `Ctrl+Shift+I`
 - hover over function or class, `Ctrl+Click` to open file with the corresponding
   function oder right click → peek definition
 
-### Optional Extensions
-
-- Code Spell Checker
-- Code Runner
-- Live Share
-
----
+## Python <a name="python"></a>
 
 ### Virtual Environment
 
@@ -94,7 +111,7 @@ pip install -r requirements-dev.txt
 
 - [recipes at Microsoft's GitHub](https://github.com/microsoft/vscode-recipes)
 
-#### launch.json
+### launch.json
 
 put in workspace directory: `.vscode/launch.json`
 
@@ -119,10 +136,8 @@ put in workspace directory: `.vscode/launch.json`
 
 ### Markdown
 
-- `Ctrl+Space`: Intellisense giving code snippets for formatting are at the bottom
-- [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
-- [The Ultimate Guide to Markdown](https://gist.github.com/cuonggt/)
 - Extensions: e.g., [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf), ...
+- `Ctrl+Space`: Intellisense giving code snippets for formatting are at the bottom
 
 ### YAML
 
@@ -154,5 +169,3 @@ put in workspace directory: `.vscode/launch.json`
 - [Tabnine](https://www.tabnine.com/)
 
 ### Python
-
--
