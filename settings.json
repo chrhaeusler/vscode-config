@@ -18,13 +18,14 @@
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
     "editor.rulers": [80, 100, 120],
     "editor.renderLineHighlight": "all",
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "trailing",
 
     // TERMINAL
-    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.fontSize": 14,
 
     // Python virtual environment
@@ -45,8 +46,7 @@
     // Ruff for linting, fixing, import sorting
     "ruff.enable": true,
     "ruff.organizeImports": true,
-    "ruff.lintOnSave": true,
-    "ruff.path": [".venv/bin/ruff"],
+    "ruff.path": [".venv/bin/ruff", "ruff"],
 
     // Use Pylance for IntelliSense & type checking
     "python.languageServer": "Pylance",

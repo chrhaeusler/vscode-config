@@ -4,18 +4,15 @@ This repository contains a minimal set of configuration files for Visual Studio 
 
 ## Files Tracked
 
-- `settings.json`:
-  Defines settings related to Python development, including editor behaviors, linting, and formatting. It supports easy switching between formatters like `autopep8`, `black`, and `ruff`.
-
-- `keybindings.json`:
-  Contains custom keybindings
-
-- `docs/`: mostly Markdown files for different topics
+- [settings.json](/settings.json): user settings of VSCode
+- [keybindings.json](/keybindings.json): custom keybindings
+- [extensions-install.sh](/extensions-install.sh): Installs VSCode (debian 64-bit), if not installed already; installs the extensions (that I use)
+- [docs/](/docs): markdown files for different topics
 
 ## Key Features
 
 - **Custom interpreter path**: `${workspaceFolder}/.venv/bin/python`
-- **Pylint** and **Mypy** are enabled for static code analysis.
+- **Mypy** are enabled for static code analysis.
 - **Black** as standard formatter
 - **Ruff** is used for organizing imports and enforcing code style.
 
@@ -25,16 +22,14 @@ This repository contains a minimal set of configuration files for Visual Studio 
 
 ## How to Use
 
-1. Clone this repository into your VS Code user settings folder:
+1. Clone / copy this repository into your VS Code user settings folder:
 
    - **Linux**: `cd ~/.config/Code/User`
    - **macOS**: `cd ~/Library/Application Support/Code/User`
    - **Windows**: `cd %APPDATA%\Code\User`
 
-2. Install recommended extensions for Python development in VS Code:
-   - Python (ms-python)
-   - Mypy Type Checker
-   - Black Formatter
-   - Pylance
-   - autopep8
-   - Ruff
+2. Install extensions
+
+```bash
+./extensions-install.sh
+```

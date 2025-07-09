@@ -1,18 +1,24 @@
-# Notes and stuff
+# VSCode
 
 ## Table of Contents
 
 1. [Basics](#basics)
 2. [General Stuff](#general)
-3. [Hotkeys](#hotkeys)
-4. [Python](#python)
-5. [Links](#links)
+3. [Extensions](#extensions)
+4. [Hotkeys](#hotkeys)
+5. [Python](#python)
+6. [Python Extensions](#python-extensions)
+7. [Git](#git)
+8. [Markdown](#markdown)
+9. [YAML](#yaml)
+10. [SQL](#sql)
+11. [Links](#links)
 
 ## Basics <a name="basics"></a>
 
 ### Install
 
-Use the script ([extensions-install.sh](../extensions-install.sh))
+- for extensions, use ([extensions-install.sh](../extensions-install.sh))
 
 ### Update from .deb downloaded within VSCode
 
@@ -28,9 +34,15 @@ sudo apt-get install -f
 - Theme: Dark Modern (Ctrl+Shift+P -> theme)
 - Icons: vscode-icons
 
+## Extensions <a name="extensions"></a>
+
+- cf. [extensions-install.sh](/extensions-install.sh)
+
 ### Optional Extensions
 
 - Code Spell Checker
+- ToDo Tree (shows files with `TODO`s or `FIXME`s in them)
+- Diff
 - Code Runner
 - Live Share
 
@@ -43,7 +55,7 @@ sudo apt-get install -f
 
 ### settings.json
 
-`Ctrl+Shift+P` -> "Preferences: Open User Settings (JSON)"
+`Ctrl+Shift+P` -> _Preferences: Open User Settings (JSON)_
 
 ## Hotkeys <a name="hotkeys"></a>
 
@@ -53,7 +65,7 @@ sudo apt-get install -f
 - **Quick open (or go to) file**: `Ctrl+P`
 - **Circle through file tabs**: `Ctrl+Tab`
 
-- **Quick navi within file**: `Ctrl+P` -> `@`
+- **Quick navi within file**: `Ctrl+P` -> _@_
 - **Go to line**: `Ctrl+G`
 
 ### Intellisense
@@ -71,12 +83,24 @@ sudo apt-get install -f
 ### Code Comments
 
 - **Toggle line comment**: `Ctrl+/`
+- **Toggle block comment**: `Shift+Alt+A`
 - **Indent block**: `Tab`
 - **Unindent block**: `Shift + Tab`
 
 ### Multi-cursor
 
 - **Insert Cursor**: `Alt+Click`
+
+### Search & Replace
+
+- `Strg+F`; `Strg+H`
+- **Search sidebar** to search / search & replace in all files
+
+### Snippets
+
+- cf. `~/.config/Code/User/snippets/python.json`
+- **Insert snippet**: `Ctrl+Shift+P` -> _Snippets_ (e.g. elif-finally,
+  try-ecept-finally-block)
 
 ### Formatting
 
@@ -86,12 +110,6 @@ sudo apt-get install -f
 
 - **Refactor selection**: `Ctrl+Shift+R`
 - **Rename variable everywhere**: mark + `right-click` -> Rename
-
-### Snippets
-
-- cf. `~/.config/Code/User/snippets/python.json`
-- **Insert snippet**: `Ctrl+Shift+P` -> _Snippets_ (e.g. elif-finally,
-  try-ecept-finally-block)
 
 ### Peek & Find
 
@@ -149,27 +167,46 @@ put in workspace directory: `.vscode/launch.json`
 }
 ```
 
-### Markdown
+## Python Extensions <a name="python-extensions"></a>
+
+- `ms-python.python`: The main Python extension for VS Code. Enables IntelliSense, linting, virtual environments, Jupyter support, etc.
+- `ms-python.mypy-type-checker`: Adds MyPy integration (type checking).
+- `charliermarsh.ruff`: Official Ruff extension. Provides linting, autofixes, and import sorting using Ruff.
+- `ms-python.black-formatter`: Official Black integration for formatting Python files.
+- `ms-python.debugpy`: Debugging backend for the Python extension. Required for breakpoints, step-through, etc.
+
+- `frhtylcn.pythonsnippets`: Adds Python code snippets (e.g. common functions, classes, boilerplate). great if you use snippet shortcuts (like typing `def` and hitting Tab).
+- `njpwerner.autodocstring`: Auto-generates Python docstrings when you type
+
+### Obsolete extensions:
+
+- `ms-python.autopep8`: Uses the old `autopep8` formatter. Replaced by Black or Ruff.
+- `ms-python.flake8`: Adds support for Flake8 linter; Replaced by Ruff.
+- `ms-python.pylint`: Pylint linter. Similar to Flake8, but also covered by Ruff.
+- `ms-python.isort`: Provides import sorting via `isort`. Replaced by Ruff.
+
+## Git <a name="git"></a>
+
+- s. [github.md](/docs/github.md)
+- Extension `gitLens`
+
+## Markdown <a name="markdown"></a>
 
 - Extensions: e.g., [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf), ...
 - `Ctrl+Space`: Intellisense giving code snippets for formatting are at the bottom
 
-### YAML
+## YAML <a name="yaml"></a>
 
 - Extension for formatting: e.g. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) (by Red Hat; incl. validation, error detection, hover support), ...
 
-### SQL
+## SQL <a name="sql"></a>
 
 - Extension `SQLTools` + install driver for specific SQL dialect / database type
 
-### Remote Development
+## Remote Development
 
 - Extension `Remote Development` (includes **`Remote SSH`**)
 - Extension `Docker`
-
-### Git
-
-- Extension `gitLens`
 
 ## Links <a name="links"></a>
 
