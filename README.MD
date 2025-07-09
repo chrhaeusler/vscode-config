@@ -2,9 +2,9 @@
 
 This repository contains a minimal set of configuration files for Visual Studio Code tailored to Python development. The focus is on:
 
-1. setting up VS Code quickly on a Debian Linux OS
-2. provide settings a productive coding environment with features like linting, formatting, debugging, and keybindings.
-3. Provide some cheat sheets in `docs/`.
+1. setting up VS Code quickly on a Debian Linux OS.
+2. settings for a productive coding environment with features like linting, formatting, debugging, and keybindings.
+3. some cheat sheets in `docs/`.
 
 ## Files Tracked
 
