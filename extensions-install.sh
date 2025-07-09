@@ -1,12 +1,40 @@
 #!/bin/bash
 
-# Install current version of vscode for Linux Debian 64bit
-# wget -P /home/{username}/ -O vscode-current.deb https://go.microsoft.com/fwlink/?LinkID=760868 
-# sudo apt install /home/{username}/vscode-current.deb
+# Install VS Code for Linux Debian 64-bit (only if not already installed)
+# Set variables
+DEST_DIR="$HOME/Downloads"
+DEST_FILE="vscode-64bit-current.deb"
+DEST_PATH="$DEST_DIR/$DEST_FILE"
+VSCODE_URL="https://go.microsoft.com/fwlink/?LinkID=760868"
 
-# Install vscode extensions
-code --install-extension blackboxapp.blackbox@2.8.43
-code --install-extension blackboxapp.blackboxagent@3.3.33
+# Check if VS Code is already installed
+if command -v code >/dev/null 2>&1; then
+    echo "VS Code is already installed: $(code --version | head -n 1)"
+else
+    # Ensure Downloads directory exists
+    mkdir -p "$DEST_DIR"
+
+    # Download the latest .deb
+    echo "Downloading VS Code to $DEST_PATH..."
+    wget -O "$DEST_PATH" "$VSCODE_URL"
+
+    # Install using apt
+    echo "Installing VS Code..."
+    sudo apt install -y "$DEST_PATH"
+
+    # Confirm install
+    if command -v code >/dev/null 2>&1; then
+        echo "✅ VS Code was successfully installed: $(code --version | head -n 1)"
+    else
+        echo "❌ Installation failed."
+        exit 1
+    fi
+fi
+
+# Install extensions
+echo
+echo "📦 Installing extensions..."
+
 code --install-extension charliermarsh.ruff@2025.24.0
 code --install-extension christian-kohler.path-intellisense@2.10.0
 code --install-extension docker.docker@0.11.0
@@ -19,13 +47,9 @@ code --install-extension github.github-vscode-theme@6.3.5
 code --install-extension mhutchie.git-graph@1.30.0
 code --install-extension ms-azuretools.vscode-containers@2.0.3
 code --install-extension ms-azuretools.vscode-docker@2.0.0
-code --install-extension ms-python.autopep8@2025.2.0
 code --install-extension ms-python.black-formatter@2025.2.0
 code --install-extension ms-python.debugpy@2025.8.0
-code --install-extension ms-python.flake8@2025.2.0
-code --install-extension ms-python.isort@2025.0.0
 code --install-extension ms-python.mypy-type-checker@2025.2.0
-code --install-extension ms-python.pylint@2025.2.0
 code --install-extension ms-python.python@2025.8.1
 code --install-extension ms-python.vscode-pylance@2025.6.2
 code --install-extension ms-toolsai.jupyter@2025.6.0
