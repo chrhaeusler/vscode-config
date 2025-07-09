@@ -4,42 +4,37 @@ This repository contains a minimal set of configuration files for Visual Studio 
 
 ## Files Tracked
 
-- **`settings.json`**:
+- `settings.json`:
   Defines settings related to Python development, including editor behaviors, linting, and formatting. It supports easy switching between formatters like `autopep8`, `black`, and `ruff`.
 
-- **`keybindings.json`**:
+- `keybindings.json`:
   Contains custom keybindings
+
+- `docs/`: mostly Markdown files for different topics
 
 ## Key Features
 
 - **Custom interpreter path**: `${workspaceFolder}/.venv/bin/python`
-
-- **Linting & Code Quality Tools**:
-  - **Pylint** and **Mypy** are enabled for static code analysis.
-  - **Ruff** is used for organizing imports and enforcing code style.
-
-- **Formatters**:
-  - **Default**: `autopep8` with a max line length of 80 characters.
-  - **Alternative**: Support for switching to `black` or using `ruff` for lint-fixing on save.
-
+- **Pylint** and **Mypy** are enabled for static code analysis.
+- **Black** as standard formatter
+- **Ruff** is used for organizing imports and enforcing code style.
 
 ## Custom Keybindings
 
-- **Alt+b**: insert an interactive Python debugger (`ipdb`) breakpoint (`import ipdb; ipdb.set_trace()`)
-
+- `alt+b`: insert an interactive Python debugger (`ipdb`) breakpoint (`import ipdb; ipdb.set_trace()`)
 
 ## How to Use
-1. Clone this repository into your VS Code user settings folder:
-    - **Linux**: `cd ~/.config/Code/User`
-    - **macOS**: `cd ~/Library/Application Support/Code/User`
-    - **Windows**: `cd %APPDATA%\Code\User`
-2. Ensure you have Python 3.11 installed and create a virtual environment in your project directory:
 
-     ```
-     python3.11 -m venv .venv
-     ```
-3. Install recommended extensions for Python development in VS Code, e.g.:
-     - Python (ms-python)
-     - Pylance
-     - autopep8
-     - Ruff
+1. Clone this repository into your VS Code user settings folder:
+
+   - **Linux**: `cd ~/.config/Code/User`
+   - **macOS**: `cd ~/Library/Application Support/Code/User`
+   - **Windows**: `cd %APPDATA%\Code\User`
+
+2. Install recommended extensions for Python development in VS Code:
+   - Python (ms-python)
+   - Mypy Type Checker
+   - Black Formatter
+   - Pylance
+   - autopep8
+   - Ruff

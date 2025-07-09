@@ -39,50 +39,64 @@ sudo apt-get install -f
 ### GUI
 
 - single click on a file in explorer opens a file temporarily (file name in italics); double click on file name (in italics) to open permanently.
-- use `Ln xy` in right bottom bar to jump to line
+- use `Ln xy` in status bar to jump to line (or `Ctrl+g`)
 
 ### settings.json
 
-`Ctrl+Shift+P` -> "Preferences: Open User Settings (JSON)"open settings.json
+`Ctrl+Shift+P` -> "Preferences: Open User Settings (JSON)"
 
 ## Hotkeys <a name="hotkeys"></a>
 
 ### General
 
 - **Open command palette**: `Ctrl+Shift+P` or `F1`
-- **Quick open file**: `Ctrl+P`
+- **Quick open (or go to) file**: `Ctrl+P`
 - **Circle through file tabs**: `Ctrl+Tab`
+
+- **Quick navi within file**: `Ctrl+P` -> `@`
+- **Go to line**: `Ctrl+G`
 
 ### Intellisense
 
 - **Auto-completion**: `Ctrl+Space` to see suggestions; click on desired
   one and `Ctrl+Space` again to see its doc
 
+### Editing
+
+- **Cut line (empty selection)**: `Ctrl+X`
+- **Copy line (empty selection)**: `Ctrl+C`
+- **Delete line**: `Ctrl+Shift+K`
+- **Move line (or selection) up/down**: `Alt+↑` / `↓`
+
 ### Code Comments
 
-- Toggle line comment: `Ctrl+/`
-- Indent block: `Tab`
-- Unindent block: `Shift + Tab`
+- **Toggle line comment**: `Ctrl+/`
+- **Indent block**: `Tab`
+- **Unindent block**: `Shift + Tab`
+
+### Multi-cursor
+
+- **Insert Cursor**: `Alt+Click`
 
 ### Formatting
 
-Format Document: `Ctrl+Shift+I`
+- **Format Document**: `Ctrl+Shift+I`
 
 ### Refactoring
 
-- Refactor selection: `Ctrl+Shift+R`
-- Rename variable everywhere: mark+`right-click` → Rename
+- **Refactor selection**: `Ctrl+Shift+R`
+- **Rename variable everywhere**: mark + `right-click` -> Rename
 
 ### Snippets
 
-- `~/.config/Code/User/snippets/python.json`
-- Insert snippet: `Ctrl+Shift+P` → _Snippets_ (e.g. elif-finally,
+- cf. `~/.config/Code/User/snippets/python.json`
+- **Insert snippet**: `Ctrl+Shift+P` -> _Snippets_ (e.g. elif-finally,
   try-ecept-finally-block)
 
 ### Peek & Find
 
 - hover over function or class, `Ctrl+Click` to open file with the corresponding
-  function oder right click → peek definition
+  function oder right click -> peek definition
 
 ## Python <a name="python"></a>
 
@@ -90,6 +104,7 @@ Format Document: `Ctrl+Shift+I`
 
 ```bash
 # Create a virtual environment
+# python3.11 -m venv .venv
 python -m venv .venv
 ```
 
@@ -149,7 +164,7 @@ put in workspace directory: `.vscode/launch.json`
 
 ### Remote Development
 
-- Extension `Remote Development` includes **`Remote SSH`**))
+- Extension `Remote Development` (includes **`Remote SSH`**)
 - Extension `Docker`
 
 ### Git
