@@ -34,10 +34,9 @@ fi
 # Install extensions
 echo
 echo "📦 Installing extensions..."
-
 code --install-extension charliermarsh.ruff@2025.24.0
 code --install-extension christian-kohler.path-intellisense@2.10.0
-code --install-extension docker.docker@0.11.0
+code --install-extension docker.docker@0.12.0
 code --install-extension donjayamanne.githistory@0.6.20
 code --install-extension esbenp.prettier-vscode@11.0.0
 code --install-extension frhtylcn.pythonsnippets@1.0.2
@@ -45,6 +44,7 @@ code --install-extension github.copilot@1.341.0
 code --install-extension github.copilot-chat@0.28.5
 code --install-extension github.github-vscode-theme@6.3.5
 code --install-extension mhutchie.git-graph@1.30.0
+code --install-extension mintlify.document@2.2.2
 code --install-extension ms-azuretools.vscode-containers@2.0.3
 code --install-extension ms-azuretools.vscode-docker@2.0.0
 code --install-extension ms-python.black-formatter@2025.2.0

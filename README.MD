@@ -10,17 +10,20 @@ This repository contains a minimal set of configuration files for Visual Studio 
 
 - [settings.json](/settings.json): user settings of VS Code
 - [keybindings.json](/keybindings.json): custom keybindings
-- [extensions-install.sh](/extensions-install.sh): Installs VS Code (debian 64-bit), if not installed already; installs extensions
+- [extensions-install.sh](/extensions-install.sh): installs VS Code (debian 64-bit), if not installed already; installs extensions
 - [docs/](/docs): cheat sheets as markdown files for different topics
 
 ## How to Use
 
 1. Clone / copy this repository into your VS Code user settings folder:
 
-   - **Linux**: `cd ~/.config/Code/User`
+```bash
+git clone https://github.com/chrhaeusler/vscode-config ~/.config/Code/User
+```
 
-2. Install extensions
+2. Install VS Code + extensions
 
 ```bash
+cd ~/.config/Code/User
 ./extensions-install.sh
 ```
