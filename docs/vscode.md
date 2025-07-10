@@ -75,6 +75,7 @@ sudo apt-get install -f
 
 - **Auto-completion**: `Ctrl+Space` to see suggestions; click on desired
   one and `Ctrl+Space` again to see its doc
+- **Hover Definition**: `Ctrl+K Ctrl+I`
 - **AutoDocstring**: `Ctrl+Shift+P` + _Generate Docstring_ (via extension `autodocstring`)
 - Test **Mintlify** Doc Writer!
 
