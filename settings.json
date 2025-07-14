@@ -81,4 +81,6 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    // GITHUB COPILOT
+    "github.copilot.nextEditSuggestions.enabled": true,
 }
