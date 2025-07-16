@@ -1,5 +1,7 @@
 # Github Copilot
 
+[Docs Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+
 ## TODO
 
 - browse through settings
@@ -10,15 +12,15 @@
 
 ## GUI
 
-- ✨: Rewrite; click -> _modify_ or _review_
-- 💡: Quick Fix;
+- ✨: Rewrite: click -> _modify_ or _review_
+- 💡: Quick Fix
 
 - `Right Click` -> _Copilot_:
-  1. Explain
-  2. Fix
-  3. Review and Comment
-  4. Generate Docs
-  5. Generate Tests
+  - Explain
+  - Fix
+  - Review and Comment
+  - Generate Docs
+  - Generate Tests
 
 ## Hotkeys
 
@@ -29,20 +31,21 @@
 - **Accept Next Word**: `Ctrl + →`
 - **See Suggestion in Panel**: `Ctrl + Enter`
 
-- **Editor Inline Chat**: `Ctrl + I`
+- **Start Inline Chat in Editor or Terminal**: `Ctrl + I`
 - **Open Chat**: `Ctrl + Alt + I`
 
 ## Chat
 
-- 📎: add context
-- `#`: context via symbol (e.g.file['s function])
-- `@`: ask participant ("persona" / "char")
+- **`/help` for help**
+- 📎 or `#` to add context: e.g.file('s function), symbol, codebase...
+- `@`: ask participant (e.g. `@workspace`, `@vscode`, `@terminal`)
+
 - `/`:
-  1. `/fix`
-  2. `/tests`
-  3. `/explain`
-  4. `/doc`
-  5. `/new`
+  - `/explain`
+  - `/fix`
+  - `/doc`
+  - `/new`
+  - `/tests`
 
 ## Settings
 
