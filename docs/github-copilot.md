@@ -1,13 +1,13 @@
 # Github Copilot
 
-[Docs Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
-
 ## TODO
 
 - browse through settings
 
-## Extensions
+## Quick-Links
 
+- [Docs Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+- [Settings @ GitHub](https://github.com/settings/copilot/)
 - [GitHub Marketplace](https://github.com/marketplace)
 
 ## GUI
@@ -47,9 +47,25 @@
   - `/new`
   - `/tests`
 
-## Settings
+## CLI
 
-### Instruction file
+`gh` is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
+
+- `gh` to check if installed
+- [Docs](https://github.com/cli/cli)
+- `gh copilot` to check if installed
+- `gh auth login`
+- `gh extension install github/gh-copilot`
+
+Usage:
+
+- `gh copilot`: `explain "[str]"`, `suggest "[str]"`
+
+Example:
+
+- `gh copilot suggest "create a new readme.md and structure it with headings and add the MIT licence`
+
+## Instruction file
 
 - `.github/copilot-instructions.md` per project folder
 - [Docs](https://code.visualstudio.com/docs/copilot/copilot-customization)
