@@ -8,7 +8,8 @@
 
 - [Docs Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
 - [Settings @ GitHub](https://github.com/settings/copilot/)
-- [GitHub Marketplace](https://github.com/marketplace)
+- [Web GUI](https://github.com/copilot)
+- Extensions: cf. [GitHub Marketplace](https://github.com/marketplace)
 
 ## GUI
 
@@ -70,6 +71,10 @@ Example:
 - `.github/copilot-instructions.md` per project folder
 - [Docs](https://code.visualstudio.com/docs/copilot/copilot-customization)
 - Templates: [GitHub: Awesome Copilot](https://github.com/github/awesome-copilot)
+
+## Prompt file
+
+cf. `66 - F-19 - Prompt Files in GitHub Copilot (h265).mkv`
 
 ## Links
 
