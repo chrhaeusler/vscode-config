@@ -10,8 +10,8 @@
 
 ## GUI
 
-- **Yellow Stars** == Rewrite; click -> _modify_ or _review_
-- **Yellow lightbulb** == Quick Fix;
+- ✨: Rewrite; click -> _modify_ or _review_
+- 💡: Quick Fix;
 
 - `Right Click` -> _Copilot_:
   1. Explain
@@ -29,13 +29,14 @@
 - **Accept Next Word**: `Ctrl + →`
 - **See Suggestion in Panel**: `Ctrl + Enter`
 
-- **Editor Inline Chat**: `Ctrl + i`
-- **Open Chat**: `Ctrl + Alt + i`
+- **Editor Inline Chat**: `Ctrl + I`
+- **Open Chat**: `Ctrl + Alt + I`
 
 ## Chat
 
-- `#`: context
-- `@`: ask "persona" / "char"
+- 📎: add context
+- `#`: context via symbol (e.g.file['s function])
+- `@`: ask participant ("persona" / "char")
 - `/`:
   1. `/fix`
   2. `/tests`
@@ -48,6 +49,8 @@
 ### Instruction file
 
 - `.github/copilot-instructions.md` per project folder
+- [Docs](https://code.visualstudio.com/docs/copilot/copilot-customization)
+- Templates: [GitHub: Awesome Copilot](https://github.com/github/awesome-copilot)
 
 ## Links
 
